@@ -1,10 +1,8 @@
 #!/bin/bash
 set -e
 
-DB_HOST=${DB_HOST:-adzy-db}
-
 echo "Waiting for Postgres..."
-until pg_isready -h $DB_HOST -p 5432; do
+until pg_isready -h $DB_HOST -p $DB_PORT; do
   sleep 1
 done
 
