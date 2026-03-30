@@ -1,0 +1,1 @@
+ssh -t mz@85.215.67.148 "cd /opt/app/adzy && bash --login"
