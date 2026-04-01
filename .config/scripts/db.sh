@@ -1,0 +1,1 @@
+ssh -t mz@85.215.67.148 "docker exec -it adzy-db psql -U postgres -d adzy_prod"
